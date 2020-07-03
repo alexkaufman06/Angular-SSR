@@ -15,8 +15,7 @@ export class DataService {
         return this.http.get<any>(this.questionsUrl)
             .pipe(
                 catchError(this.handleError)
-            )
-            ;
+            );
     }
 
     handleError(error: HttpErrorResponse) {
